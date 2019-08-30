@@ -1,0 +1,23 @@
+package CreateP.BuilderP;
+
+public class BuilderPDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		MealBuilder mealBuilder=new MealBuilder();
+		
+		Meal vegMeal=mealBuilder.prepareVegMeal();
+		System.out.println("Veg Meal");
+		vegMeal.showItems();
+		System.out.println("Total Cost: " +vegMeal.getCost());
+		
+		
+		Meal nonVegMeal = mealBuilder.prepareNonMeal();
+	      System.out.println("\n\nNon-Veg Meal");
+	      nonVegMeal.showItems();
+	      System.out.println("Total Cost: " +nonVegMeal.getCost());
+	}
+
+}
